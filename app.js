@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 
 	$("#generate").on("click", function(){
-			var el = "<div>Line #"+i+"<button id='color'>Change Color</button><button id='remove'>Remove</button></div>"
+			var el = "<div>Line #"+i+"</div><div><button id='color'>Change Color</button></div><div><button id='remove'>Remove</button></div>"
 			$("#lines").append(el);
 			i++;
 	});
@@ -13,7 +13,7 @@ $(document).ready(function(){
 		$("#lines").click(function(){
 		$("#color").css("background-color", "yellow");
 		});
-	
+	//it must think that it has already completed this. 
 
 		$("#lines").click(function(){
 		$("#remove").remove();
