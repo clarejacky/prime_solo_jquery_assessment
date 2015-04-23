@@ -4,14 +4,14 @@ $(document).ready(function(){
 
 
 	$("#generate").on("click", function(){
-			var el = "<div>Line #"+i+"</div><div id='buttonColor'><button id='changeColor'>Change Color</button></div><div id='buttonRemove'><button id='remove'>Remove</button></div>"
+			var el = "<div>Line #"+i+"<button id='color'>Change Color</button><button id='remove'>Remove</button></div>"
 			$("#lines").append(el);
 			i++;
 	});
 
 
 		$("#lines").click(function(){
-		$("#changeColor").css("background-color", "yellow");
+		$("#color").css("background-color", "yellow");
 		});
 	
 
