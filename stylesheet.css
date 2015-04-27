@@ -1,0 +1,14 @@
+.line {
+	display:inline-block;
+	float: left;
+	width: 120px;
+}
+button {
+	margin: 10px;
+	border-radius: 10px;
+}
+
+#generate, #color, #remove {
+	width: 100px;
+	height: 50px;
+}

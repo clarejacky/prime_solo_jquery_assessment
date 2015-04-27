@@ -4,19 +4,19 @@ $(document).ready(function(){
 
 
 	$("#generate").on("click", function(){
-			var el = "<div>Line #"+i+"</div><div><button id='color'>Change Color</button></div><div><button id='remove'>Remove</button></div>"
+			var el = "<div class='line'> #"+i+"<div><button id='color'>Change Color</button></div><div><button id='remove'>Remove</button></div></div>"
 			$("#lines").append(el);
 			i++;
 	});
 
 
-		$("#lines").click(function(){
-		$("#color").css("background-color", "yellow");
+		$("#lines").on("click", "#color" ,function(){
+		$(this).parent().parent().css("background-color", "yellow");
 		});
 	//it must think that it has already completed this. 
 
-		$("#lines").click(function(){
-		$("#remove").remove();
+		$("#lines").on("click", "#remove", function(){
+		$(this).parent().parent().remove();
 		console.log("Hi");
 		});
 	
